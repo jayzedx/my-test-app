@@ -1,0 +1,17 @@
+<section>
+  <label>Search </label>
+  <input type="text" (input)="applyFilter($event)">
+  <table border="1">
+    <tr>
+      <th>Seq</th>
+      <th>Category Name</th>
+    </tr>
+
+    <tbody *ngFor="let category of categories; index as i">
+      <tr>
+        <td>{{ i+1 }}</td>
+        <td align="left">{{category}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

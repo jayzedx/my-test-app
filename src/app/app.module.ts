@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultModule } from './default.module';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { DefaultModule } from './default.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DefaultModule
+    DefaultModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
