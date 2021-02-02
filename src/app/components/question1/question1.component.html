@@ -1,0 +1,5 @@
+<main id="container">
+  <app-first (onChangeInputEvent)="receiveInputEvent($event)"></app-first>
+  <app-second (onChangeDropdownEvent)="receiveDropdownEvent($event)"></app-second>
+  <app-third [myNumber]="myInput" [selectedDropdown]="mySelected"></app-third>
+</main>

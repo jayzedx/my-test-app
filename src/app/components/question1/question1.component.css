@@ -1,0 +1,31 @@
+main#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  background: burlywood;
+  overflow: hidden;
+}
+
+app-first {
+  background-color: aquamarine;
+  width: 200px;
+}
+app-second {
+  background-color: cadetblue;
+  flex-grow: 1;
+  min-width: 100px;
+}
+app-third {
+  background-color: aquamarine;
+  width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  main#container {
+    overflow-y: scroll;
+    /* height: 120vh; */
+  }
+}
