@@ -5,7 +5,7 @@ import { DefaultComponent } from './default/default.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'question1',
     component: DefaultComponent,
     children: [{
       path: '',
